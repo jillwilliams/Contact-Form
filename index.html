@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" 
+        Unicode="U+00A9, UTF-8: C2 A9"
+        Unicode="U+221A, UTF-8: E2 88 9A"
+        Unicode="U+1F605, UTF-8: F0 9F 98 85"
+        Unicode="U+00F7, UTF-8: C3 B7">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link 
+        href="https://fonts.googleapis.com/css?family=Dokdo|Indie+Flower|Cormorant+Unicase|Shadows+Into+Light|Beth+Ellen|Permanent+Marker|Lacquer|Neucha|UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <title>
+        Contact Form
+    </title>
+    <link rel="stylesheet" HREF="./styles.css">
+</head>
+<body>
+    <h1 id="title">Contact Form</h1>
+        <div id="form-outer">
+            <form id="survey-form" method="GET" action="https://www.freecodecamp.com">
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for "preferences">
+                            What type of insurance are you looking for? <br> Check all that apply:
+                        </label>
+                    </div>
+                    <div class ="rightTab">
+                        <ul id="preferences" style="list-style:none;">
+                            <li class="checkbox">
+                                <label>
+                                    <input 
+                                    name="prefer"
+                                    value="1" 
+                                    type="checkbox"
+                                    class="userRatings">
+                                    Homeowner's Insurance
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input 
+                                    name="prefer"
+                                    value="2" 
+                                    type="checkbox"
+                                    class="userRatings">
+                                    Automobile Insurance
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input 
+                                    name="prefer"
+                                    value="3" 
+                                    type="checkbox"
+                                    class="userRatings">
+                                    Boater's Insurance
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input 
+                                    name="prefer"
+                                    value="4" 
+                                    type="checkbox"
+                                    class="userRatings">
+                                    Commercial Insurance
+                                </label>
+                            </li>
+                            <li class="checkbox">
+                                <label>
+                                    <input 
+                                    name="prefer"
+                                    value="5" 
+                                    type="checkbox"
+                                    class="userRatings">
+                                    Health Insurance
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label for "currentPos">
+                        Which option best describes your insurance needs?
+                    </label>
+                </div>
+            <div class="rightTab">
+                <select 
+                id="dropdown"
+                name="currentPos"
+                class="dropdown">
+                </select>
+                    <option disabled value>
+                        Select an Option
+                    </option>
+                    <option value="No Insurance">
+                        Have no insurance but am looking for some
+                    </option>
+                    <option value="Renewal">
+                        Need to renew my policy
+                    </option>
+                    <option vaue="Need Info">
+                        Need information regarding my policy
+                    </option>
+                    <option vaue="Other">
+                        Other
+                    </option>
+                </select>
+            </div>
+        </div>
+        <div>
+            <p>
+                Please provide your contact information and DL Williams Insurance will contact you regarding your insurance needs.
+            </p>
+        </div>
+        <form id="survey-form" method="GET" action="https:\\www.freecodecamp.com">
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="name-label" for "name">* Name: </label>
+                </div>
+            </div>
+            <div class="rightTab">
+                <input
+                autofocus type="text"
+                name="name"
+                id="name"
+                class="input-field"
+                placeholder="Enter your Name"
+                required>
+            </div>
+            <div class="rowTab">
+                <div class="labels">
+                    <label id="email-label" for "email">
+                        * Email: 
+                    </label>
+                </div>
+                <div class="rightTab">
+                    <input 
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="input-field"
+                    required placeholder="Enter your Email">
+                </div>
+            </div>
+            <div class="rightTab">
+                <div class="labels">
+                    <label id="phone-label" for "phone">
+                    * Phone: 
+                    </label>
+                </div>
+                    <input 
+                    type="number"
+                    name="phone"
+                    id="number"
+                    class="input-field"
+                    placeholder="Enter Phone Number">
+                </div>
+                <div class="rowTab">
+                    <div class="labels">
+                        <label for "comments">
+                            Comments
+                        </label>
+                    </div>
+                </div>
+                <div class="rightTab">
+                    <text area 
+                    id="comments" 
+                    class="input-field"
+                    style="height:50px;resize:vertical"
+                    name="comment"
+                    placeholde="Enter your comments here">
+                    </text>
+                </div>
+                <button id="submit" type="submit">
+                    Submit
+                </button>
+
+        </form>
